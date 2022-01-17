@@ -21,6 +21,11 @@ class GameScene: SKScene {
     // Measure
     var knobRadius : CGFloat = 50.0
     
+    // Sprite Engine
+    var previousTimeInterval : TimeInterval = 0
+    var playerIsFacingRight = true
+    let playerSpeed = 4.0
+    
     // DidMove
     override func didMove(to view: SKView) {
       
@@ -87,5 +92,32 @@ extension GameScene {
         joystickAction = false
     }
 }
-
-
+// MARK: Game Loop
+extension GameScene {
+    override func update(_ currentTime: TimeInterval) {
+        let deltaTime = currentTime - previousTimeInterval
+        previousTimeInterval = currentTime
+        
+        // Player movement
+        guard let joystickKnob = joystickKnob else { return }
+        let xPosition = Double(joystickKnob.position.x)
+        let displacement = CGVector(dx: deltaTime * xPosition * playerSpeed, dy: 0)
+        let move = SKAction.move(by: displacement, duration: 0)
+        let faceAction : SKAction!
+        let movingRight = xPosition > 0
+        let movingLeft = xPosition < 0
+        if movingLeft && playerIsFacingRight {
+            playerIsFacingRight = false
+            let faceMovement = SKAction.scaleX(to: -1, duration: 0.0)
+            faceAction = SKAction.sequence([move, faceMovement])
+        }
+        else if movingRight && !playerIsFacingRight {
+            playerIsFacingRight = true
+            let faceMovement = SKAction.scaleX(to: 1, duration: 0.0)
+            faceAction = SKAction.sequence([move, faceMovement])
+        } else {
+            faceAction = move
+        }
+        player?.run(faceAction)
+    }
+}
