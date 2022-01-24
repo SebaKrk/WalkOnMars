@@ -16,6 +16,7 @@
 		93457910279586D100E15137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9345790E279586D100E15137 /* Main.storyboard */; };
 		93457912279586D300E15137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93457911279586D300E15137 /* Assets.xcassets */; };
 		93457915279586D300E15137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93457913279586D300E15137 /* LaunchScreen.storyboard */; };
+		938881FF279EFA6B000CFF67 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 938881FE279EFA6B000CFF67 /* audio */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9345790F279586D100E15137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93457911279586D300E15137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93457914279586D300E15137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		938881FE279EFA6B000CFF67 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				932DA4E1279DF9DE00560CC3 /* playerStateMachine.swift */,
 				9345790E279586D100E15137 /* Main.storyboard */,
 				93457911279586D300E15137 /* Assets.xcassets */,
+				938881FE279EFA6B000CFF67 /* audio */,
 				93457913279586D300E15137 /* LaunchScreen.storyboard */,
 			);
 			path = WalkOnMars;
@@ -135,6 +138,7 @@
 				93457910279586D100E15137 /* Main.storyboard in Resources */,
 				93457907279586D100E15137 /* GameScene.sks in Resources */,
 				93457912279586D300E15137 /* Assets.xcassets in Resources */,
+				938881FF279EFA6B000CFF67 /* audio in Resources */,
 				93457915279586D300E15137 /* LaunchScreen.storyboard in Resources */,
 				93457909279586D100E15137 /* Actions.sks in Resources */,
 			);
