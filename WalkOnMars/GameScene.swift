@@ -15,6 +15,12 @@ class GameScene: SKScene {
     var joystick : SKNode?
     var joystickKnob : SKNode?
     var cameraNode : SKCameraNode?
+    var mountains1 : SKNode?
+    var mountains2 : SKNode?
+    var mountains3 : SKNode?
+    var sun : SKNode?
+    var stars : SKNode?
+    
     
     // Bool
     var joystickAction = false
@@ -37,6 +43,11 @@ class GameScene: SKScene {
         joystick = childNode(withName: "joystick")
         joystickKnob = joystick?.childNode(withName: "knob")
         cameraNode = childNode(withName: "cameraNode")  as? SKCameraNode
+        mountains1 = childNode(withName: "mountains1")
+        mountains2 = childNode(withName: "mountains2")
+        mountains3 = childNode(withName: "mountains3")
+        sun = childNode(withName: "sun")
+        stars = childNode(withName: "stars")
         
         playerStateMachine = GKStateMachine(states: [
             JumpingState(playerNode: player!),
@@ -150,5 +161,21 @@ extension GameScene {
             faceAction = move
         }
         player?.run(faceAction)
+        
+        // Background Parallax
+        let paralax1 = SKAction.moveTo(x: (player?.position.x)!/(-10), duration: 0.0)
+        mountains1?.run(paralax1)
+        
+        let paralax2 = SKAction.moveTo(x: (player?.position.x)!/(-20), duration: 0.0)
+        mountains2?.run(paralax2)
+        
+        let paralax3 = SKAction.moveTo(x: (player?.position.x)!/(-40), duration: 0.0)
+        mountains3?.run(paralax3)
+        
+        let paralax4 = SKAction.moveTo(x: (cameraNode?.position.x)!, duration: 0.0)
+        sun?.run(paralax4)
+        
+        let paralax5 = SKAction.moveTo(x: (cameraNode?.position.x)!, duration: 0.0)
+        stars?.run(paralax5)
     }
 }
