@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		932DA4E2279DF9DE00560CC3 /* playerStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932DA4E1279DF9DE00560CC3 /* playerStateMachine.swift */; };
 		93457905279586D100E15137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93457904279586D100E15137 /* AppDelegate.swift */; };
 		93457907279586D100E15137 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93457906279586D100E15137 /* GameScene.sks */; };
 		93457909279586D100E15137 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93457908279586D100E15137 /* Actions.sks */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		932DA4E1279DF9DE00560CC3 /* playerStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerStateMachine.swift; sourceTree = "<group>"; };
 		93457901279586D100E15137 /* WalkOnMars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkOnMars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93457904279586D100E15137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93457906279586D100E15137 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				93457908279586D100E15137 /* Actions.sks */,
 				9345790A279586D100E15137 /* GameScene.swift */,
 				9345790C279586D100E15137 /* GameViewController.swift */,
+				932DA4E1279DF9DE00560CC3 /* playerStateMachine.swift */,
 				9345790E279586D100E15137 /* Main.storyboard */,
 				93457911279586D300E15137 /* Assets.xcassets */,
 				93457913279586D300E15137 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				9345790B279586D100E15137 /* GameScene.swift in Sources */,
 				9345790D279586D100E15137 /* GameViewController.swift in Sources */,
+				932DA4E2279DF9DE00560CC3 /* playerStateMachine.swift in Sources */,
 				93457905279586D100E15137 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
