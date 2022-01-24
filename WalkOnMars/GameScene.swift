@@ -176,6 +176,7 @@ extension GameScene {
             }
             else {
                 dying()
+                showDieScene()
             }
             invincible()
         }
@@ -193,6 +194,10 @@ extension GameScene {
         player?.run(dieAction)
         self.removeAllActions()
         fillHearts(count: 3)
+    }
+    func showDieScene() {
+        let gameOverScene = GameScene(fileNamed: "GameOver")
+        self.view?.presentScene(gameOverScene)
     }
 }
 
