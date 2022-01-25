@@ -16,6 +16,7 @@
 		93457910279586D100E15137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9345790E279586D100E15137 /* Main.storyboard */; };
 		93457912279586D300E15137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93457911279586D300E15137 /* Assets.xcassets */; };
 		93457915279586D300E15137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93457913279586D300E15137 /* LaunchScreen.storyboard */; };
+		936F235327A06E3800A24C0E /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 936F235227A06E3800A24C0E /* Level2.sks */; };
 		938881FF279EFA6B000CFF67 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 938881FE279EFA6B000CFF67 /* audio */; };
 		93888201279F03F7000CFF67 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93888200279F03F7000CFF67 /* GameOver.sks */; };
 		93888203279F0440000CFF67 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93888202279F0440000CFF67 /* GameOver.swift */; };
@@ -23,7 +24,6 @@
 		93A3843C279F0BE800BE29B4 /* Level3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3843B279F0BE800BE29B4 /* Level3.swift */; };
 		93A38444279F0DC500BE29B4 /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93A38443279F0DC500BE29B4 /* Level3.sks */; };
 		93A38447279F195000BE29B4 /* Level2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A38445279F195000BE29B4 /* Level2.swift */; };
-		93A38448279F195000BE29B4 /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93A38446279F195000BE29B4 /* Level2.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +37,7 @@
 		9345790F279586D100E15137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93457911279586D300E15137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93457914279586D300E15137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		936F235227A06E3800A24C0E /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
 		938881FE279EFA6B000CFF67 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
 		93888200279F03F7000CFF67 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
 		93888202279F0440000CFF67 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		93A3843B279F0BE800BE29B4 /* Level3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level3.swift; sourceTree = "<group>"; };
 		93A38443279F0DC500BE29B4 /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level3.sks; sourceTree = "<group>"; };
 		93A38445279F195000BE29B4 /* Level2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level2.swift; sourceTree = SOURCE_ROOT; };
-		93A38446279F195000BE29B4 /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 				93888204279F05A8000CFF67 /* Level1.swift */,
 				93457906279586D100E15137 /* Level1.sks */,
 				93A38445279F195000BE29B4 /* Level2.swift */,
-				93A38446279F195000BE29B4 /* Level2.sks */,
+				936F235227A06E3800A24C0E /* Level2.sks */,
 				93A3843B279F0BE800BE29B4 /* Level3.swift */,
 				93A38443279F0DC500BE29B4 /* Level3.sks */,
 				93888202279F0440000CFF67 /* GameOver.swift */,
@@ -163,7 +163,7 @@
 				93457912279586D300E15137 /* Assets.xcassets in Resources */,
 				938881FF279EFA6B000CFF67 /* audio in Resources */,
 				93457915279586D300E15137 /* LaunchScreen.storyboard in Resources */,
-				93A38448279F195000BE29B4 /* Level2.sks in Resources */,
+				936F235327A06E3800A24C0E /* Level2.sks in Resources */,
 				93457909279586D100E15137 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
