@@ -33,7 +33,7 @@ class Level1 : GameScene {
     override func update(_ currentTime: TimeInterval) {
         
         super.update(currentTime)
-        if score >= 1 {
+        if score >= 5 {
             let nextLevel = GameScene(fileNamed: "Level2")
             nextLevel?.scaleMode = .aspectFill
             view?.presentScene(nextLevel)

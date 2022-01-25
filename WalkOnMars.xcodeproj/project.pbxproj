@@ -21,8 +21,6 @@
 		93888201279F03F7000CFF67 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93888200279F03F7000CFF67 /* GameOver.sks */; };
 		93888203279F0440000CFF67 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93888202279F0440000CFF67 /* GameOver.swift */; };
 		93888205279F05A8000CFF67 /* Level1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93888204279F05A8000CFF67 /* Level1.swift */; };
-		93A3843C279F0BE800BE29B4 /* Level3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3843B279F0BE800BE29B4 /* Level3.swift */; };
-		93A38444279F0DC500BE29B4 /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93A38443279F0DC500BE29B4 /* Level3.sks */; };
 		93A38447279F195000BE29B4 /* Level2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A38445279F195000BE29B4 /* Level2.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +40,6 @@
 		93888200279F03F7000CFF67 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
 		93888202279F0440000CFF67 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
 		93888204279F05A8000CFF67 /* Level1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1.swift; sourceTree = "<group>"; };
-		93A3843B279F0BE800BE29B4 /* Level3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level3.swift; sourceTree = "<group>"; };
-		93A38443279F0DC500BE29B4 /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level3.sks; sourceTree = "<group>"; };
 		93A38445279F195000BE29B4 /* Level2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level2.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -83,8 +79,6 @@
 				93457906279586D100E15137 /* Level1.sks */,
 				93A38445279F195000BE29B4 /* Level2.swift */,
 				936F235227A06E3800A24C0E /* Level2.sks */,
-				93A3843B279F0BE800BE29B4 /* Level3.swift */,
-				93A38443279F0DC500BE29B4 /* Level3.sks */,
 				93888202279F0440000CFF67 /* GameOver.swift */,
 				93888200279F03F7000CFF67 /* GameOver.sks */,
 				9345790C279586D100E15137 /* GameViewController.swift */,
@@ -159,7 +153,6 @@
 				93457910279586D100E15137 /* Main.storyboard in Resources */,
 				93888201279F03F7000CFF67 /* GameOver.sks in Resources */,
 				93457907279586D100E15137 /* Level1.sks in Resources */,
-				93A38444279F0DC500BE29B4 /* Level3.sks in Resources */,
 				93457912279586D300E15137 /* Assets.xcassets in Resources */,
 				938881FF279EFA6B000CFF67 /* audio in Resources */,
 				93457915279586D300E15137 /* LaunchScreen.storyboard in Resources */,
@@ -181,7 +174,6 @@
 				9345790D279586D100E15137 /* GameViewController.swift in Sources */,
 				932DA4E2279DF9DE00560CC3 /* playerStateMachine.swift in Sources */,
 				93888203279F0440000CFF67 /* GameOver.swift in Sources */,
-				93A3843C279F0BE800BE29B4 /* Level3.swift in Sources */,
 				93457905279586D100E15137 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
