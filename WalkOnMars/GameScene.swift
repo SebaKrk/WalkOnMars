@@ -51,6 +51,11 @@ class GameScene: SKScene {
         
         physicsWorld.contactDelegate = self
         
+        let effectAudioAction = SKAction.playSoundFileNamed("music.wav", waitForCompletion: false)
+        let changeVolumeAction = SKAction.changeVolume(to: 0.1, duration: 0.1)
+        let effectAudioGroup = SKAction.group([effectAudioAction,changeVolumeAction])
+        run(effectAudioGroup)
+        
         player = childNode(withName: "player")
         joystick = childNode(withName: "joystick")
         joystickKnob = joystick?.childNode(withName: "knob")
@@ -105,6 +110,7 @@ extension GameScene {
             let location =  touch.location(in: self)
             if !(joystick?.contains(location))! {
                 playerStateMachine.enter(JumpingState.self)
+                run(Sound.jump.action)
             }
         }
     }
@@ -286,6 +292,7 @@ extension GameScene: SKPhysicsContactDelegate {
         if collision.matches(.player, .killing) {
             loseHeart()
             isHit = true
+            run(Sound.hit.action)
             
             playerStateMachine.enter(StunnedState.self)
         }
@@ -308,6 +315,7 @@ extension GameScene: SKPhysicsContactDelegate {
                 rewardTouch()
                 rewardIsNotTouched = false
             }
+            run(Sound.reward.action)
         }
         
         if collision.matches(.ground, .killing) {
@@ -320,6 +328,7 @@ extension GameScene: SKPhysicsContactDelegate {
                 createMolten(at: meteor.position)
                 meteor.removeFromParent()
             }
+            run(Sound.meteorFalling.action)
         }
     }
 }
