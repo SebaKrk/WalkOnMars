@@ -1,7 +1,7 @@
 # WalkoOnMars
 
 ### Hi,
-### This is my app "WalkoOnMars" that I created for my egzam...
+### This is my "WalkoOnMars" application that I created in college
 
 ##### Level 01
 <img src="AppScreen\pic01.level1.png" width="600" height="300" > 
